@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.content {
+  padding: 120px 0;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+section.module.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* propriedade que fixa a imagem dando o efeito parallax */
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax-1:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, #000 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, #000 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, #000 100%, #000 100%);
+}
+
+section.module.parallax-2:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, #000 100%);
+  background: -webkit-linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, #000 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, #000 100%, #000 100%);
+}
+
+section.module.parallax-1 {
+  background-image: url("https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+section.module.parallax-2 {
+  background-image: url("https://i.ytimg.com/vi/mkVcuntLIsg/maxresdefault.jpg");
+}
+
+section.module.parallax h1 {
+  color:rgb(255, 255, 255);
+  text-shadow: 5px 4px rgb(0, 0, 0);
+  text-align: center;
+  font-size: 60px;
+  z-index: 50px;
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background:rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background:rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#5B247A, #1b91df, #5B247A);
+  border-radius: 30px;
+}
